@@ -28,6 +28,7 @@ public class GitController {
         log.info("git hook info: {}", body);
         // 测试推送代码
         // 测试推送代码2
+        // 测试脚本3
         Runtime runtime = Runtime.getRuntime();
         try {
             runtime.exec(script);
