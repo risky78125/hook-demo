@@ -30,10 +30,12 @@ public class GitController {
         Runtime runtime = Runtime.getRuntime();
         try {
             runtime.exec(script);
+            return Collections.singletonMap("message", "ok");
         } catch (IOException e) {
             e.printStackTrace();
+            return Collections.singletonMap("message", "failed");
+
         }
-        return Collections.singletonMap("message", "ok");
     }
 
 }
