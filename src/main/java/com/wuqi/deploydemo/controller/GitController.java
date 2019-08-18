@@ -21,6 +21,7 @@ public class GitController {
     @PostMapping("/hook")
     public Map hook(@RequestBody Map body) {
         log.info("git hook info: {}", body);
+        // 测试推送代码
         return Collections.singletonMap("message", "ok");
     }
 
