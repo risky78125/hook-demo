@@ -27,6 +27,7 @@ public class GitController {
     public Map hook(@RequestBody Map body) {
         log.info("git hook info: {}", body);
         // 测试推送代码
+        // 测试推送代码2
         Runtime runtime = Runtime.getRuntime();
         try {
             runtime.exec(script);
